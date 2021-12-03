@@ -539,5 +539,5 @@ extern "C" int RedisModule_OnLoad(RedisModuleCtx *ctx, RedisModuleString **argv,
 		rc = REDISMODULE_ERR;
 
 	
-	return rc;;
+	return rc;
 }

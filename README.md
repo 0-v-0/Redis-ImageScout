@@ -13,7 +13,7 @@ detection and copyright protection of images.
 Build and run a docker image:
 
 ```
-docker build --tag imgscout:0.1 .
+docker build -t imgscout:0.1 .
 docker run --detach --publish 6379:6379 --mount src=imgscoutdata,dst=/data --name imgscout imgscout:0.1
 ```
 
@@ -116,5 +116,3 @@ Use the `imgscoutclient` utility to add or query the image files
 in a given directory.  Run `./imgscoutclient -h` for all the options.
 After adding files, be sure to run `./imgscoutclient --cmd sync --key mykey`
 to add the recent additions to the index structure.  
-
-

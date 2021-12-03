@@ -1,6 +1,6 @@
 # BUILD starkdg/imagescout:${VERSION}-${ARCH}-${OSNICK}
 
-ARG REDIS_VER=6.0.7
+ARG REDIS_VER=6.2.5
 
 # bionic|stretch|buster|etc
 ARG OSNICK=buster
@@ -59,5 +59,3 @@ COPY --from=builder /build/imgscout.so "$LIBDIR"
 EXPOSE 6379
 
 CMD ["redis-server", "--loadmodule", "/usr/lib/redis/modules/imgscout.so"]
-
-

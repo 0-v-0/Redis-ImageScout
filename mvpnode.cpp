@@ -448,5 +448,3 @@ const vector<DataPoint*> MVPLeaf::PurgeDataPoints(){
 	}
 	return results;
 }
-
-
